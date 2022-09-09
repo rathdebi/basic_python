@@ -9,7 +9,6 @@ def check_even_or_odd(num):
 
 
 # program to check prime number
-
 def check_prime_number(num):
     if num <= 1:
         return False
@@ -100,3 +99,24 @@ with open("num2words.txt", "a") as writer_file:
     # write back the num to word interpretation
     for content in num2words(content_read):
         writer_file.write(content)
+        
+        
+        
+# string manipulation
+# return engine number from a give a number plate
+# engine no is sum of all digits present in number plate
+
+def get_engine_no_from_num_plate(number_plate:str):
+    """return engine number from a given number number_plate
+      which is sum of all digits present in number_plate
+      if not found then return False"""
+    engine_num = 0
+    for char in number_plate:
+        if char.isdigit():
+            engine_num+= int(char)
+        else:
+            pass
+    return engine_num if engine_num > 0 else "no engine number"
+
+number_plate = input("please enter your number plate")
+get_engine_no_from_num_plate(number_plate)
