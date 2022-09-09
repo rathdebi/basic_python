@@ -206,3 +206,26 @@ miles = randint(200, 400)
 print("enter gallons of gas that fuel tank holds :"+str(gallons))
 print("enter miles driven before a needing a refuel :"+str(miles))
 print("miles per gallon calculated is "+ str(calculate_miles_per_gallons(gallons,miles)) +".")
+
+
+# grade determiner to determine grades of class students
+def determine_grade(score:int):
+    """determine grade of students basis on marks via rules- 
+    score >= 90 : grade A
+    score >= 80 and score < 90 : grade B
+    score >= 70 and score < 80 : grade C
+    score >= 60 and score < 70 : grade D
+    if any student do not fall in above rules then he/she will be failed"""
+    if score >= 90:
+    print("Grade A")
+    elif score >= 80 and score < 90:
+    print("Grade B")
+    elif score >= 70 and score < 80:
+    print("Grade C")
+    elif score >= 60 and score < 70:
+    print("Grade D")
+    else:
+    print("Grade F")
+
+score = int(input("enter your score :"))
+determine_grade(score)
