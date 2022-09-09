@@ -178,3 +178,16 @@ if re.search("a|e|i|o|u",input_string):
     print("yes")
 else:
     print("no")
+    
+# given a input string replace the middle index element by * in conext
+# of odd and even string len size.
+name_string = input()
+new_name_string = list(name_string)
+if len(name_string)% 2 != 0 or len(name_string) == 1:
+    middle_index = int(len(name_string)//2)
+    new_name_string[middle_index] = "*"
+    print("".join(new_name_string))
+else:
+    middle_index1,middle_index2 = len(name_string)//2- 1, len(name_string)//2
+    new_name_string[middle_index1:middle_index2+1] = "**"
+    print("".join(new_name_string))
