@@ -120,3 +120,19 @@ def get_engine_no_from_num_plate(number_plate:str):
 
 number_plate = input("please enter your number plate")
 get_engine_no_from_num_plate(number_plate)
+
+
+# program for finding repeating or unique element
+# from a given string
+
+from collections import Counter
+def repeating_characters(name:str):
+    """find repeating characters from a string"""
+    counter_dict = Counter(name)
+    result = list()
+    for character,count in counter_dict.items():
+        if count == 1:
+            result.append(character)
+        else:
+            pass
+    return "".join(result)
