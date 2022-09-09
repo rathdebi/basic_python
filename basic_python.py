@@ -125,6 +125,13 @@ get_engine_no_from_num_plate(number_plate)
 # program for finding repeating or unique element
 # from a given string
 
+input_name = input()
+result =[]
+for char in input_name:
+    if char not in result and input_name.count(char)==1:
+        result.append(char)
+print("".join(result))
+
 from collections import Counter
 def repeating_characters(name:str):
     """find repeating characters from a string"""
@@ -136,3 +143,29 @@ def repeating_characters(name:str):
         else:
             pass
     return "".join(result)
+
+# given a string return wonder if it is consisting of 3 distinct characters
+# else return -1
+# for a given string "aabbcc" return "Wonder" , for "aabccddee" return -1
+
+input_name = input()
+result =[]
+for char in input_name:
+    if char not in result and input_name.count(char)>=1:
+        result.append(char)
+print("Wonder" if len(result)==3 else -1)
+
+# using a function
+from collections import Counter
+def wonderful_string(name:str):
+    """return "Wonderful" from a string of exactly 3 different characters
+    else -1"""
+
+    counter_dict = Counter(name)
+    result = list()
+    for character,count in counter_dict.items():
+        if count >= 1:
+            result.append(character)
+        else:
+            pass
+    return "Wonder" if len(result)== 3 else -1
