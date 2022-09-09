@@ -11,7 +11,7 @@ in this repository I have covered below topics,
   1- python data stuructures(will be added soon)
   2- python file handling
   3- python functional programming
-  4- python string methods
+  4- python string methods(added many)
   5- python json
   6- python mysql db connection
   
