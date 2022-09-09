@@ -191,3 +191,18 @@ else:
     middle_index1,middle_index2 = len(name_string)//2- 1, len(name_string)//2
     new_name_string[middle_index1:middle_index2+1] = "**"
     print("".join(new_name_string))
+    
+# write a program that calculates miles per gallon
+# from vehicle having miles driven before a refuel by 
+# gallons of gas the tank holds.
+
+from random import randint
+def calculate_miles_per_gallons(gallons:int,miles:int):
+  """approximates number of miles per gallon that a car gets"""
+  return miles//gallons
+
+gallons = randint(10, 25)
+miles = randint(200, 400)
+print("enter gallons of gas that fuel tank holds :"+str(gallons))
+print("enter miles driven before a needing a refuel :"+str(miles))
+print("miles per gallon calculated is "+ str(calculate_miles_per_gallons(gallons,miles)) +".")
