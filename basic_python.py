@@ -169,3 +169,12 @@ def wonderful_string(name:str):
         else:
             pass
     return "Wonder" if len(result)== 3 else -1
+
+
+# given a string return "yes" if it contains vowels else return "no"
+import re
+input_string = input()
+if re.search("a|e|i|o|u",input_string):
+    print("yes")
+else:
+    print("no")
