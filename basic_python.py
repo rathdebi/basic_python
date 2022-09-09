@@ -229,3 +229,32 @@ def determine_grade(score:int):
 
 score = int(input("enter your score :"))
 determine_grade(score)
+
+# create roman numeral system from a given english numeral system from 1 to 10
+# for example 9 can be represented as IX.
+
+def convert_english_numeral_to_roman(one_to_ten:int):   
+    """given a english numeral from 1 to 10 at random, convert the same to its roman 
+    numeral representation. for instance romal numeral of 9 would be IX"""
+    if one_to_ten == 1:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is I.")
+    elif one_to_ten == 2:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is II.")
+    elif one_to_ten == 3:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is III.")
+    elif one_to_ten == 4:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is IV.")
+    elif one_to_ten == 5:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is V.")
+    elif one_to_ten == 6:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is VI.")
+    elif one_to_ten == 7:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is VII.")
+    elif one_to_ten == 8:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is VIII.")
+    elif one_to_ten == 9:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is IX.")
+    else:
+        print("The roman numeral equivalent of " + str(one_to_ten) + " is X.")
+one_to_ten = randint(1, 10)
+convert_english_numeral_to_roman(one_to_ten)
