@@ -217,15 +217,15 @@ def determine_grade(score:int):
     score >= 60 and score < 70 : grade D
     if any student do not fall in above rules then he/she will be failed"""
     if score >= 90:
-    print("Grade A")
+        print("Grade A")
     elif score >= 80 and score < 90:
-    print("Grade B")
+        print("Grade B")
     elif score >= 70 and score < 80:
-    print("Grade C")
+        print("Grade C")
     elif score >= 60 and score < 70:
-    print("Grade D")
+        print("Grade D")
     else:
-    print("Grade F")
+        print("Grade F")
 
 score = int(input("enter your score :"))
 determine_grade(score)
