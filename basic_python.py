@@ -345,3 +345,29 @@ def fact_recurssion(fact_num):
         return fact_num * fact_recurssion(fact_num - 1)
     
 fact_recurssion(5) # will print 120, test it
+
+
+# program to demonstrate all string methods
+
+def check_string_method_exercise(string_case:str):
+    """verify all string methods given in a string"""
+    if string_case == "":
+        return False
+    if string_case.isupper():
+        return string_case.upper()
+    if string_case.islower():
+        return string_case.lower()
+    print(string_case.upper())
+    if string_case.istitle():
+        title_case = string_case.title()
+        return title_case
+    if string_case.startswith("A Song"):
+        return string_case
+    if string_case.endswith("Fire"):
+        return string_case
+    words = string_case.split()
+    print(words)
+    words = "".join(words)
+    if words.isalpha():
+        return words
+check_string_method_exercise("The song of Bryan Adams")
