@@ -414,3 +414,16 @@ def check_string_method_extended_exercise(the_string:str):
     print(the_string.rstrip("+"))
     print(the_string.strip("+"))
     print(the_string.replace("North","South"))
+    
+    
+# reversed string,given an input "debi", "ibed" will be returned
+# in case of empty string return False
+
+def reverse_string(name_str:str):
+    """given a string find its reverse"""
+    if name_str == "":
+        return False
+    reversed_string = ""
+    for char in range(len(name_str)-1, -1, -1):
+        reversed_string += name_str[char]
+    return reversed_string
