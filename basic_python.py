@@ -427,3 +427,27 @@ def reverse_string(name_str:str):
     for char in range(len(name_str)-1, -1, -1):
         reversed_string += name_str[char]
     return reversed_string
+
+
+
+# word count program that will return number of words 
+# in a list and total number of words
+
+def count_words(input_str:str):
+    """given a multiline string return words and number of words"""
+    if input_str == "":
+        return False
+    # try to place junk characters at once
+    reserved_space_and_letters = ""
+    for char in input_str:
+        if char.isalnum() or char.isspace() or char == "-" or char == "'":
+        reserved_space_and_letters += char
+    # split into words -- as list
+    words = reserved_space_and_letters.split()
+    # get the number of words
+    number_of_words = len(words)
+    return words,number_of_words
+
+input_string = input()
+count_words(input_str)
+
