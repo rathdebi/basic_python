@@ -8,17 +8,23 @@ whatever I learn from my day to day stuff will be posted in this thread. if you 
 for your reference.
 
 in this repository I have covered below topics,
-  1- python data stuructures(will be added soon)
-  2- python file handling
-  3- python functional programming
-  4- python string methods(added many)
-  5- python json
-  6- python mysql db connection
+
+    1- python data stuructures(will be added soon)
+    
+    2- python file handling (added)
+    
+    3- python functional programming (added)
+    
+    4- python string methods(added)
+    
+    5- python json (will be adding)
+    
+    6- python mysql db connection (added)
+    
+    7- python loops and conditionals (added)
   
   
-  just learn and have fun with your programming.
-  
-  
+  just learn and have fun with your programming. learning is always fun.
   more and more stuff will be added as the time progress. so do follow along.
   
   
