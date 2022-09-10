@@ -258,3 +258,90 @@ def convert_english_numeral_to_roman(one_to_ten:int):
         print("The roman numeral equivalent of " + str(one_to_ten) + " is X.")
 one_to_ten = randint(1, 10)
 convert_english_numeral_to_roman(one_to_ten)
+
+
+
+# while loop exercises
+
+counter = 10
+while counter <= 10:
+    print(counter)
+    counter -= 1
+    if counter == 0:
+        break
+
+# another approach
+counter = int(input("enter a number: "))
+sum = 0
+while counter != 0:
+    sum += counter
+    counter -= 1
+print("total of sum: "+str(sum))
+
+
+# for loop exercises
+
+word_string = "hello world"
+for letter in word_string:
+    print(letter)
+
+# find a total length of a given string
+
+input_string = input("enter a string: ")
+counter = 0
+for letter in input_string:
+    counter += 1
+
+print(input_string)
+print(counter)
+
+
+# write a program that iterates over 1 to 50
+# if numbers that are multiple of 3 and 5 print 3Buzz5
+# if numbers that are multiple of 3 but not 5 print 3Buzz
+# if numbers that are multiple of 5 but not 3 print 5Buzz
+# for numbers tht are not a multiple of 3 or 5 print 3NoBuzzNo5
+
+def multiple_of_3and5(range_int):
+    """return designated outputs if a given number is multple of 3 and 5"""
+    for num in range_int:
+        if num % 3 == 0 and num % 5 == 0:
+            print(num, "3Buzz5")
+        elif num % 3 == 0 and num % 5 !=0:
+            print(num, "3Buzz")
+        elif num % 3 != 0 and num % 5 == 0:
+            print(num, "5Buzz")
+        else:
+            print(num, "3NoBuzzNo5")
+            
+range_int = range(1,51)
+multiple_of_3and5(range_int)
+
+
+# given a number find its factorial
+# to verify that function is working as intended
+# an input of 3 would give 6, 4 would give 20 as output
+# and so on.
+
+def find_factorial_of_number(fact_number):
+    
+    """given a number find its factorial which is multiplication of 
+    same number to 1. for instance factorial of 3 is 3*2*1=6"""
+    factorial = 1
+    for num in range(fact_number, 1, -1):
+        factorial *= num
+    return factorial if fact_number > 1 else 1
+
+input_number = int(input("enter a number: "))
+find_factorial_of_number(input_number)
+
+# using recurssion also works
+
+def fact_recurssion(fact_num):
+    """factorial of a number using recurssion"""
+    if fact_num == 0 or fact_num == 1:
+        return 1
+    if fact_num > 1:
+        return fact_num * fact_recurssion(fact_num - 1)
+    
+fact_recurssion(5) # will print 120, test it
