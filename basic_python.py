@@ -371,3 +371,46 @@ def check_string_method_exercise(string_case:str):
     if words.isalpha():
         return words
 check_string_method_exercise("The song of Bryan Adams")
+
+
+# program to demonstrate all string methods
+# without conditionals if else statements
+# easy to get along with all string methods
+
+
+def check_string_method_exercise(string_case:str):
+    
+    """verify all string methods given in a string"""
+    if string_case == "":
+        return False
+    print(string_case.isupper())
+    print(string_case.islower())
+    print(string_case.upper())
+    print(string_case.lower())
+    print(string_case.istitle())
+    title_case = string_case.title()
+    print(title_case)
+    print(string_case.startswith("The song"))
+    print(string_case.endswith("Adams"))
+    words = string_case.split()
+    print(words)
+    print("".join(words).isalpha())
+
+check_string_method_exercise("The song of Bryan Adams")
+
+
+# extended string methods
+# rjust(),ljust(),center(),rstrip(),lstrip(),strip(),replace()
+
+def check_string_method_extended_exercise(the_string:str):
+    
+    """check string methods rjust,ljust,center,strip,lstrip,rstrip
+    methods names ends with () as mentioned above, in this case we skipped it"""
+    print(the_string.rjust(17))
+    print(the_string.ljust(17,"*"))
+    center_plus = the_string.center(16, "+")
+    print(center_plus)
+    print(the_string.lstrip("North"))
+    print(the_string.rstrip("+"))
+    print(the_string.strip("+"))
+    print(the_string.replace("North","South"))
