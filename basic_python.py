@@ -58,6 +58,45 @@ print(animals_list) # "walrus" removed from list
 # great you are learing very quickly, amazing...
 
 
+# dictionary practices
+the_dict = { 1 : "one", 2 : "two", 3 : "three", 4: "four", 5: "five"}
+print(the_dict)
+# access third key value
+print(the_dict[3])
+print(1 in the_dict) # True
+print(6 not in the_dict) # True
+print(3 not in the_dict) # True
+
+# mutable data type, but keys are immutable
+# it is getting stored by reference in case of copy
+first_dict = {1981:"Sunita", 1983: "Swagatika", 1985: "Tara Prasad", 1988: "Debi Prasad"}
+second_dict = first_dict
+second_dict[1988] = "Sanababu"
+print(first_dict)
+print(second_dict)
+
+my_dict = {"Queen": "Bohemian Rhapsody", 
+           "Bee Gees": "Stayin' Alive", 
+           "U2": "One", 
+           "Michael Jackson": "Billie Jean", 
+           "The Beatles": "Hey Jude", 
+           "Bob Dylan": "Like A Rolling Stone"}
+
+# print the length of dictionary
+len(my_dict) 
+# print all keys using .keys() method  
+for key in my_dict.keys():
+  print("keys are: "+str(key))
+# print all values using .values() method
+for value in my_dict.values():
+  print("values are: "+str(value)) 
+# print key,value combined using .items() method
+for key,value in my_dict.items():
+  print("keys and values: ",(key,value))
+
+# use .get() method to find a key
+print(my_dict.get("Queen","key not found, please provide a valid key"))
+
 
 
 # program to check even or odd
