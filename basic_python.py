@@ -568,3 +568,4 @@ def count_words(input_str:str):
 input_string = input()
 count_words(input_str)
 
+
