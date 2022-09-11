@@ -9,7 +9,10 @@ for your reference.
 
 in this repository I have covered below topics,
 
-    1- python data stuructures(will be added soon)
+    1- python data stuructures(added)
+            1- list methods
+            2- tuple methods
+            3- set and dictionaries
     
     2- python file handling (added)
     
