@@ -151,6 +151,44 @@ print(the_dict)
 the_dict.setdefault("mentor","Sanatan") # old value preserved
 print(the_dict)
 
+# creating tuple , same like list made up of collection of items
+# but using () parenthesis, and a tuple by nature is immutable
+# item assignment is not allowed. one more advantage
+# of tuple over list is it is memory efficient
+# data inside a tuple can be string,list,scaler values and boolen type as well
+
+the_tuple = (1, 2, 3, 4, 5, ["debi", "deepesh", "sanatan"], True, "mylove")
+print(the_tuple)
+
+# another way to create a tuple is using tuple() which
+# will take an iterable as a parameter, like a list or string
+the_list_tuple = tuple(["debi", "deepesh", "sanatan"])
+print(the_list_tuple)
+the_string_tuple = tuple("mylove")
+print(the_string_tuple)
+
+# we can use a dictionary to create a tuple but no value
+# as only keys will be returned as tuple items
+my_dict_tuple = tuple({"singer": "Sonu","cricketer": "Dhoni", "investor": "Saurabh"})
+print(my_dict_tuple)
+
+# slicing tuple is same as like list
+my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(my_tuple[2])
+print(my_tuple[:8])
+print(my_tuple[2:7])
+
+# tuple do not allow item assignment
+# my_tuple[2:4] = [11,22]
+# print(my_tuple) # immutability
+
+# tuple can be used to create dictionary
+my_dict_from_tuple = {("debi", "rath"):"data scientist",
+                      ("ranjan", "kumar"): "machine learning expert",
+                      ("deepesh", "singh"): "ai engineer",
+                      ("sanatan", "sukhija"): "research scientist",}
+print(my_dict_from_tuple)
+
 
 # program to check even or odd
 def check_even_or_odd(num):
