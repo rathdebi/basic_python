@@ -98,6 +98,22 @@ for key,value in my_dict.items():
 print(my_dict.get("Queen","key not found, please provide a valid key"))
 
 
+# more of strng methods .fromkeys(),pop(),popitem()
+# use consonants from alphabet to create a dictionary with value "consonant"
+create_dict = {}.fromkeys("bcd","consonant")
+print(create_dict)
+
+# create a dictionary as below and using .pop()
+# delete "BigMacAlooTikki" and print it.
+fast_food_items = {"McDonald's": "BigMacAlooTikki", 
+                   "Burger King": "WhopperPaneerSlicedMaharaja", 
+                   "Chick-fil-A": "OriginalCheeseSandwich"}
+print(fast_food_items.pop("McDonald's"))
+# using .popitem() method to delete last item, print it.
+fast_food_items = fast_food_items.popitem()
+print(fast_food_items)
+
+
 
 # program to check even or odd
 def check_even_or_odd(num):
