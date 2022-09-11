@@ -189,6 +189,40 @@ my_dict_from_tuple = {("debi", "rath"):"data scientist",
                       ("sanatan", "sukhija"): "research scientist",}
 print(my_dict_from_tuple)
 
+# iterating through tuples using while loop
+the_tuple = (1, 2, 3, 4, 5, 6, 7,8, 9, 10)
+count = 0
+while count < len(the_tuple):
+    print(the_tuple[count])
+    count+= 1
+
+# print backwards 
+backwards = len(the_tuple) - 1
+while backwards >= 0:
+    print(the_tuple[backwards]) # prints (10,9,8,7,......1)
+    backwards -= 1
+
+# iterating through a for loop
+for num in the_tuple:
+    print(num)
+# as easy as one can get, thank GOD
+
+# tuple slicing , can use strides as lengths to jump index
+my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(my_tuple[::3]) # using stride length of 3 starting with first position
+print(my_tuple[1::2]) # using stride length of 2 positions from second position
+print(my_tuple[7::-1]) # backwards with stride -1 from 7th positioon, which is 8 till the first
+print(my_tuple[::2]) # odds only 
+print(my_tuple[8::-2]) # odds only backwards 
+
+# tuple methods .count(), .index()
+my_tuple = (1, 2, 3, 4, 4, 6)
+print(my_tuple.count(4)) # how many times an element is present
+
+# note - if no element found return 0 (check with 9)
+
+print(my_tuple.index(4)) # index of an element
+# note- if not an element then thrwos value error (check with 9)
 
 # program to check even or odd
 def check_even_or_odd(num):
