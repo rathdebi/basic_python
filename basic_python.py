@@ -33,6 +33,31 @@ print(third_list[1:3])
 print(third_list[1:])
 
 
+# list methods exercises
+animals_list = ["penguin", "elephant", "bear", "walrus", "tiger", "reindeer"]
+# use del to remove "tiger"
+del animals_list[4]
+print(animals_list)
+# use .remove() method to remove "elephant"
+animals_list.remove("elephant")
+print(animals_list)
+# use .append() method to add "fox"
+animals_list.append("fox")
+print(animals_list)
+# use .insert() to insert "owl" between "bear" and "walrus"
+animals_list.insert(2,"owl")
+print(animals_list)
+# use .sort() method to sort elements inside
+animals_list.sort()
+print(animals_list)
+# get the index of "reindeer" from the list
+print(animals_list.index("reindeer"))
+# use .pop() method to delete last element inside list and print
+print(animals_list.pop()) # last element after deletion
+print(animals_list) # "walrus" removed from list
+# great you are learing very quickly, amazing...
+
+
 
 
 # program to check even or odd
