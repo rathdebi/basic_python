@@ -1,3 +1,40 @@
+# list exercises
+create_a_list = [1,2,3,"love",True,[12,23,44]]
+print(create_a_list)
+create_another_list = list("mylove")
+print(create_another_list)
+print("e" in create_another_list)
+print("a" not in create_another_list)
+
+# print reverse of list elements
+num_list = [1,2,3,4,5]
+for num in range(len(num_list)-1,-1,-1):
+    print(num_list[num])
+
+# some more list exercises , have fun
+
+the_list = [[0, 2], [4, 6], [8, 10], [12, 14]]
+# access first list from list of lists
+print(the_list[0])
+# access 14 element from list
+print(the_list[3][1])
+
+# create another list
+second_list = ["chair", "table", "desk", "lamp", "bed"]
+print(second_list[-5])
+# concatenate a string "Most people own 2 beds" where 2 is coming from
+# the_list and beds is coming from second_list
+print("Most people own at least "+ str(the_list[0][1]) +" " +str(second_list[-1])+"s.")
+
+# create another list
+third_list = [0.98, 8.76, 6.54, 4.32]
+print(third_list[:2])
+print(third_list[1:3])
+print(third_list[1:])
+
+
+
+
 # program to check even or odd
 def check_even_or_odd(num):
     if num is None or num == 0:
