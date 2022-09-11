@@ -114,6 +114,43 @@ fast_food_items = fast_food_items.popitem()
 print(fast_food_items)
 
 
+# more dictionaries method extended
+# .update(), .clear() method
+celebrity_name = {"Dhoni": "Cricket", "Remo": "Dance", "Sonu": "Singing"}
+another_one = {"Saurabh": "Investing"}
+# use .update() method to add another_one dict to celebrity_name dict
+celebrity_name.update(another_one)
+# to avoid same referencing use .copy() method to 
+# copy celebrity_name dict into all_celebrity_name dict
+all_celebrity_name = celebrity_name.copy()
+celebrity_name.clear() # clear dictionary
+print(celebrity_name)
+print(all_celebrity_name)
+
+# some more dict methods dict(), setdefault()
+# we can create a dict using dict method
+the_dict = dict() # an empty dictionary
+print(the_dict)
+# we can pass values inside dict() 
+the_dict = dict(cricketer= "Dhoni",singer= "Sonu",investor= "Saurabh", dancer="Remo")
+print(the_dict)
+
+# create a new key value pair if not present inside dictionary
+if "teacher" not in the_dict:
+  the_dict["teacher"] = "Andrew-ng"
+print(the_dict) # and there we go, new key value pair added
+
+# but then this is rather easy using a function setdefault()
+the_dict.setdefault("mentor","Deepesh") # works similarly like if not found
+print(the_dict)
+
+# if a key is there and we are setting default value differently, then
+# old value of the key will be preserved. that proves immutability in 
+# case of dictionary keys
+
+the_dict.setdefault("mentor","Sanatan") # old value preserved
+print(the_dict)
+
 
 # program to check even or odd
 def check_even_or_odd(num):
