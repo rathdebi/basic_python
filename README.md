@@ -12,7 +12,8 @@ in this repository I have covered below topics,
     1- python data stuructures(added)
             1- list methods
             2- tuple methods
-            3- set and dictionaries
+            3- dictionary mthods
+            4- set methods
     
     2- python file handling (added)
     
