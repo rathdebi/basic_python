@@ -224,6 +224,96 @@ print(my_tuple.count(4)) # how many times an element is present
 print(my_tuple.index(4)) # index of an element
 # note- if not an element then thrwos value error (check with 9)
 
+# set is a data structure to hold unique data,
+# meaning that duplicate items will not be there
+
+# using {} braces we can create a set , or using in built function
+# {} like dictionary, but in set there is no key-value pair. only values/items
+
+the_set = {"bangalore", "delhi", "bhubaneswar", "cuttack", "sambalpur", "puri", "rourkela"}
+print(the_set)
+
+# use len function check number of elements
+print(len(the_set))
+
+# let us create a set with duplicate entries, and verify
+the_test_set = {"one", "one", "two", "three", "four", "five"}
+print(the_test_set) # items assignment can be of any order, 
+
+# we can convert set into list as well
+print(list(the_test_set))
+
+# using set()
+print(set(["one", "two", "three", "three", "four", "five"]))
+
+# using range() to print sequence of numbers
+print(set([num for num in range(1,15,2)]))
+
+the_set_range = set(range(1,15,2))
+print(the_set_range)
+
+# checking element in a set using in , not in
+print(12 in the_set_range) # False
+print(12 not in the_set_range) # True
+
+# unlike list and tuple sets can not be indexed
+# if we want to access elements then loop through
+for num in the_set_range:
+  print(num)
+
+# set methods exercise .add(), .remove(), .discard(), 
+# .union(), .intersection(), .difference()
+my_set = {"data science", "machine learning", "data analysis", " artificial intelligence"}
+my_set.add("full stack data science") # will be added into set
+print(my_set)
+
+my_set.remove("data analysis") # will be removed if present, else error
+print(my_set)
+
+# my_set.remove("data and analysis")
+# print(my_set)
+# using .discard() method will not throw error
+
+my_set.discard("data and analysis")
+print(my_set)
+
+my_set.discard("machine learning")
+print(my_set)
+
+# two sets can be combined together
+set_1 = {"debi", "ranjan", "deepesh", "sanatan", "nancy"}
+set_2 = {"apoorva", "stacy", "roy", "nancy", "ranjan"}
+print(set_1.union(set_2))
+
+# note-- using | operator also works 
+print(set_1 | set_2)
+
+# two sets can be intersected together, common elements
+print(set_1.intersection(set_2))
+
+# note-- using & operator also works
+print(set_1 & set_2)
+
+# difference between 2 sets
+print(set_1.difference(set_2)) # remaining element of first set
+
+# note-- using - operator also works
+print(set_1 - set_2)
+
+# set comprehension -- advanced topic
+my_set_comprehension = {num + 2 for num in range(1,10)}
+print(my_set_comprehension)
+
+my_set_characters = {char.lower() for char in "MYLOVE"}
+print(my_set_characters)
+
+
+
+
+
+
+
+
 # program to check even or odd
 def check_even_or_odd(num):
     if num is None or num == 0:
